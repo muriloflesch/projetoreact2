@@ -8,7 +8,7 @@ O primeiro passo foi criar um wireframe simples para definir as áreas de conte�
 
 # Identidade Visual
 
-A identidade visual foi inspirada pela escolha do logotipo que contem uma coruja. O roxo como cor predominante faz bastante sentido para uma loja de livros pois faz analogia à uma noite em que você está lendo aquele livro maravilhoso e deixou uma luz acesa, . Por ser uma cor pouco utilizada, ajuda a dar um toque diferenciado. A saturação da cor foi amenizada adicionado mais cinza, tornando-a menos saturada. A escolha das outras cores contou com a ajuda da famosa ferramenta https://coolors.co/ que oferecer cores análogas mantendo o mesmo nível de saturação.
+A identidade visual foi inspirada pela escolha do logotipo que contem uma coruja. O roxo como cor predominante faz bastante sentido para uma loja de livros pois faz analogia à uma noite em que você está lendo aquele livro maravilhoso e deixou uma luz acesa . Por ser uma cor pouco utilizada, ajuda a dar um toque diferenciado. A saturação da cor foi amenizada adicionado mais cinza, tornando-a menos saturada. A escolha das outras cores contou com a ajuda da famosa ferramenta https://coolors.co/ que oferecer cores análogas mantendo o mesmo nível de saturação.
 
 # Layout
 
