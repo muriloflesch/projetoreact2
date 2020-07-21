@@ -1,3 +1,5 @@
+[npm-image]: http://muriloflesch.com/imagens/home.png
+
 # Wireframe (areas de conteudo)
 
 O primeiro passo foi criar um wireframe simples para definir as areas de conteúdo. Isso é importanta tanto para o desenho final quanto para definir na mente uma ideia de arvore para os componentes react.
