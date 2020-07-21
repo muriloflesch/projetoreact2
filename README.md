@@ -23,7 +23,7 @@ Inspirado pelo logo, o layout buscou um ar mais 'fofinho' com bordas arredondas 
  - Sass - Para ajudar na criação do css
  - react-router-dom - Paras a navegação entre páginas.
  - axios - Para o consumo da api
- - Swiper - O swiper foi utilizado com o componente para REACT oferecida pela biblioteca e não da forma convencional colocando manualmente as tags html
+ - Swiper - O swiper foi utilizado com o componente para REACT e não da forma convencional colocando manualmente as tags html
     
 
 # Funcionalidades importantes mas que não tive tempo de implementar.
