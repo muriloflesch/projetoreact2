@@ -1,6 +1,5 @@
-[npm-image]
-
-[npm-image]: http://muriloflesch.com/imagens/home.png
+![Alt text](http://muriloflesch.com/imagens/home.png "Home")
+![Alt text](http://muriloflesch.com/imagens/admin.png "Home")
 
 # Wireframe (areas de conteudo)
 
