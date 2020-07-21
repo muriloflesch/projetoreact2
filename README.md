@@ -19,7 +19,7 @@ Inspirado pelo logo, o layout buscou um ar mais 'fofinho' com bordas arredondas 
 
 # Desenvolvimento
  - Editor de código -> VSCODE
- - Bootstrap - Poderia ter usado mas prefiri usar somente o css pois tenho um bom domínio de grid e flexbox e javascript puro pra interações pois sou mais produtivo dessa forma.
+ - Bootstrap - Poderia ter usado mas preferi usar somente o css pois tenho um bom domínio de grid e flexbox e javascript puro pra interações pois sou mais produtivo dessa forma.
  - Sass - Para ajudar na criação do css
  - react-router-dom - Paras a navegação entre páginas maantendo o conceito de single page application.
  - axios - Para o consumo da api
