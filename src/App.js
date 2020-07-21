@@ -13,36 +13,86 @@ class App extends React.Component {
     super(props);
 
     this.updateOfertas = this.updateOfertas.bind(this);
-   this.arrTodasOfertas = []
+    this.arrTodasOfertas = []
     this.state = {todasOfertas: []};
+
+    
+  }
+  componentDidMount() {
+      // checar o storage
+      
+      if(localStorage.length > 0){
+        var dataImage = JSON.parse(localStorage.getItem('objDados'))
+        console.log('localStorage:', dataImage)
+        dataImage.map(
+          oferta => {
+              this.updateOfertas(dataImage,false)           
+          }
+        )
+
+       
+          //console.log(JSON.parse(dataImage))
+      }else{
+        console.log('storage null')
+      }
   }
   adminPage = (props) => {
     return (
       <Admin  ofertas={this.updateOfertas}  />
     );
   }
-  organizaDados(a){
-    let conteudo = {
-      "title": a[0],
-      "value": a[1],
-      "discount": a[2],
-      "image": a[4],
-      "description": a[3]
-    }
-    this.arrTodasOfertas.push(conteudo)
+  organizaDados1(a){
+    let arrTodasOfertas = []
+      console.log('array de entrada1: ', a) 
+    
+          let conteudo = {
+            "title": a[0],
+            "value": a[1],
+            "discount": a[2],
+            "image": "data:image/png;base64," + a[4],
+            "description": a[3]
+          }
+          //console.log('retorno oferta: ', index)
+          this.arrTodasOfertas.push(conteudo)          
+   
+      console.log('array de saida1:', this.arrTodasOfertas)
     return this.arrTodasOfertas
   }
-  updateOfertas(newArr) {
-    this.setState({
-      todasOfertas: this.organizaDados(newArr)
-    });
+  organizaDados2(a){
+    let arrTodasOfertas = []
+      console.log('array de entrada2: ', a) 
+      a.map(
+        (oferta,index )=> {
+          let conteudo = {
+            "title": oferta[index][0],
+            "value": oferta[index][1],
+            "discount": oferta[index][2],
+            "image": "data:image/png;base64," + oferta[4],
+            "description": oferta[index][3]
+          }
+          console.log('retorno oferta: ', index)
+          arrTodasOfertas.push(conteudo)          
+        }
+      )
+      console.log('array de saida2:', arrTodasOfertas)
+    return arrTodasOfertas
+  }
+  
+  updateOfertas(newArr,isAdmin) {
+    if(isAdmin){
+      this.setState({
+        todasOfertas: this.organizaDados2(newArr)
+      });
+    }else{
+      this.setState({
+        todasOfertas: this.organizaDados2(newArr)
+      });
+    }
+    
   } 
   render(){
    // console.log('este: ', this.state)
-    function verificaOfertasCadastradas(){
-      
-        
-    }
+    
     return (
       <div>
         
@@ -52,6 +102,12 @@ class App extends React.Component {
             <Route path='/' exact component={VitrinePatrocinados} />
             <Route path='/admin'  render={this.adminPage}  />
             <Route path='/' exact>
+                <div className='cont-frase-importante'> 
+                  <div className='wrapper'>
+                      <h2 className='frase-importante'>  Sem <span>livros, </span>dificilmente se aprende a gostar de ler</h2>
+                  </div>
+                   
+                </div>
                 <div className='cont-ofertas-cadastradas'>
                     <div className='wrapper'>
                     {
@@ -64,7 +120,13 @@ class App extends React.Component {
                     }
                     </div>
                 </div>
+
+              
           </Route>
+
+          <div className='rodape'>
+                  <div className='wrapper'></div>
+                </div>
         </BrowserRouter>
       </div>
     );

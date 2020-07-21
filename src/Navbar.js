@@ -11,7 +11,7 @@ function Navbar() {
                         </Link>
                         <nav className='cont-menu'>
                             <ul>
-                                
+                                <li className='bt-home'><Link to='/'>home</Link></li>
                                 <li className='bt-login'> <Link to='/admin'>admin</Link> </li>
                             </ul>
                         </nav>

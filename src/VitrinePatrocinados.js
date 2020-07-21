@@ -33,6 +33,7 @@ class VitrinePatrocinados extends React.Component {
        // this.referencia = React.createRef();
       // console.log('constructor: ', this)
        // document.querySelector .appendChild(oldParent.childNodes[0]);
+       
     }
 
     async componentDidMount() {
@@ -58,28 +59,48 @@ class VitrinePatrocinados extends React.Component {
               nextEl: '.swiper-button-next',
               prevEl: '.swiper-button-prev'
             },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                  slidesPerView: 2,
+                  spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                  slidesPerView: 3,
+                  spaceBetween: 40
+                }
+            },
             spaceBetween: 30
         }
       
         return (      
             <div className='cont-patrocinados' >
                 <div className='wrapper'>
-                      <Swiper {...params}>
-                            
-                            {
-                                ofertas.map(
-                                    oferta => {
-                                        return  <SwiperSlide key={oferta.id} >
-                                                        <BoxProduto conteudo={oferta}/>
-                                                </SwiperSlide>
-                                    }
-                                )
-                            }
-                             
-                              
-                      </Swiper>
-                      <div className="swiper-button-prev"></div>
-                      <div className="swiper-button-next"></div>        
+                    <div className='wrapper2'>
+                        <Swiper {...params}>
+                                
+                                {
+                                    ofertas.map(
+                                        oferta => {
+                                            return  <SwiperSlide key={oferta.id} >
+                                                            <BoxProduto conteudo={oferta}/>
+                                                    </SwiperSlide>
+                                        }
+                                    )
+                                }
+                                
+                                
+                        </Swiper>
+                        <div className="swiper-button-prev"></div>
+                        <div className="swiper-button-next"></div>   
+                    </div>
+                          
                 </div>
 
                

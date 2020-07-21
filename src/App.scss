@@ -18,7 +18,9 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
-
+.hide{
+  display: none !important;
+}
 *{
     margin: 0;
     padding: 0;
@@ -223,42 +225,61 @@ a{
     width: 100%;
     height: 220px;
     color: $russian-violet;
+    .wrapper2{
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+    }
     .wrapper{
         position: relative;
         top: -304px;
+        padding: 0 58px;
         .swiper-container{
             max-width: 800px;
             //margin-top: -50px;
             .swiper-wrapper{
               align-items: flex-end;
                 .swiper-slide{
-                    max-width: 280px;
+                   // max-width: 280px;
                     
                 }
             }
-
-            .swiper-button-next{
-
-            }
-            .swiper-button-prev{
-              
-            }
+           
             .swiper-pagination{
 
             }
             
         }
+        .swiper-button-next::after,.swiper-button-prev::after{
+          content: '';
+        }
+        .swiper-button-next,.swiper-button-prev{
+            background-image: url('/images/bt-seta.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            top: 80%;
+            width: 34px;
+        }
+        .swiper-button-next{
+          right: -60px;
+        }
+        .swiper-button-prev{
+          transform: scaleX(-1);
+          left: -60px;
+
+        }
     }
 }
 .cont-form{
   padding: 0 20px;
-    
+    padding-bottom: 200px;
     .wrapper{
+      position: relative;
       background-color: white;
       max-width: 800px;
       margin: 0 auto;
-      border: 10px solid $forest-green-crayola;
-      padding: 30px 25px;
+      border: 15px solid $forest-green-crayola;
+      padding: 35px 30px;
       margin-top: -200px;
       position: relative;
       border-radius: 20px;
@@ -288,7 +309,14 @@ a{
           align-items: flex-end;
           
         }
-
+        .imageValidate{
+          color: $cinnamon-satin;
+          font-size: 12px;
+          font-weight: 800;
+          width: 193px;
+          margin-top:10px ;
+          text-align: center;
+        }
         input,textarea{
             border: 2px solid $forest-green-crayola;
             border-radius: 50px;
@@ -332,6 +360,7 @@ a{
                 border-radius: 50px;
                 font-size: 14px;
                 margin-top: 5px;
+                cursor: pointer;
             }
             &-submit{
                 background-color: $cinnamon-satin;
@@ -340,19 +369,69 @@ a{
                 font-weight: 800;
                 font-size: 15px;
                 padding: 15px 25px;
+                cursor: pointer;
+                &:focus{
+                  color: white;
+                }
             }
             &-titulo{
               
             }
         }
     }
-}
 
+    .cont-over{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $cinnamon-satin;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        .mensagem{  
+          text-align: center;
+          font-weight: 800;
+          font-size: 25px;
+          font-weight: 800;
+          line-height: 1.3em;
+        }
+        .bt-mensagem{
+          margin-top: 20px;
+          background-color: white;
+          border-radius: 50px;
+          padding: 15px 25px;
+          color:$cinnamon-satin;
+          cursor: pointer;
+        }
+    }
+}
+.cont-frase-importante{
+  margin-top: 300px;
+  margin-bottom: 50px;
+    .frase-importante{
+      color: $russian-violet;
+      max-width: 500px;
+      margin: 0 auto;
+      font-size: 35px;
+      span{
+        background-color: $terra-cotta;
+        color: white;
+        padding: 0 5px;
+        
+      }
+    }
+}
 .cont-ofertas-cadastradas{
-  margin-top: 250px;
+  padding-bottom: 100px;
   .wrapper{
     display: flex;
     padding: 0 20px;
+    justify-content: center;
+    flex-wrap: wrap;
 
     .cont-box-produto{
       margin: 20px 20px;
@@ -364,3 +443,14 @@ a{
   }
 }
 
+.rodape{
+  height: 500px;
+  width: 100%;
+
+  .wrapper{
+      background-image: url('/images/rodapeBackground.png');
+      background-repeat: no-repeat;
+      background-position: bottom;
+      height: 100%;
+  }
+}
