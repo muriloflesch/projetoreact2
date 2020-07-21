@@ -29,7 +29,7 @@ Inspirado pelo logo, o layout buscou um ar mais 'fofinho' com bordas arredondas 
 # Funcionalidades importantes mas que não tive tempo de implementar.
 
 - Validações no formulário
-- Carregaetno em lot com botão de 'carregar mais' para caso sejam cadastradas muitas ofertas.
+- Carregamento em lots com botão de 'carregar mais' para caso sejam cadastradas muitas ofertas.
 - Menu fixo animado
 - Animações de over em botões
 - Abertura e fechamento de telas animados com suaves transições.
