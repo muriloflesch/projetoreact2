@@ -18,12 +18,12 @@ Inspirado pelo logo, o layout buscou um ar mais 'fofinho' com bordas arredondas 
 
 
 # Desenvolvimento
-  Editor de código -> VSCODE
-  Bootstrap - Poderia ter usado mas prefiro usr somente o css para distribuir o layout e javascript puro pra interações pois sou mais produtivo dessa forma.
-  Sass - Para ajudar na criação do css
-  react-router-dom - Paras a navegação entre páginas maantendo o conceito de single page application.
-  axios - Para o consumo da api
-  Swiper - O swiper foi utilizado com o componente para REACT oferecida pela biblioteca e não da forma convencional colocando manualmente as tags html
+ - Editor de código -> VSCODE
+ - Bootstrap - Poderia ter usado mas prefiro usr somente o css para distribuir o layout e javascript puro pra interações pois sou mais produtivo dessa forma.
+ - Sass - Para ajudar na criação do css
+ - react-router-dom - Paras a navegação entre páginas maantendo o conceito de single page application.
+ - axios - Para o consumo da api
+ - Swiper - O swiper foi utilizado com o componente para REACT oferecida pela biblioteca e não da forma convencional colocando manualmente as tags html
     
 
 # Funcionalidades importantes mas que não tive tempo de implementar.
