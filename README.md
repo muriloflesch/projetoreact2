@@ -4,7 +4,7 @@
 
 # Wireframe (areas de conteudo)
 
-O primeiro passo foi criar um wireframe simples para definir as areas de conteúdo. Isso é importanta tanto para o desenho final quanto para definir na mente uma ideia de arvore para os componentes react.
+O primeiro passo foi criar um wireframe simples para definir as áreas de conteúdo. Isso é importante para o desenho final e tambem para ajudar já ir pensando em uma ideia para a arvore de componentes react.
 
 # Identidade Visual
 
