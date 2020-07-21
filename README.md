@@ -12,7 +12,7 @@ A identidade visual foi inspirada pela escolha do logotipo que contem uma coruja
 
 # Layout
 
-Inspirado pelo logo, o layout buscou um ar mais 'fofinho' com bordas arredondas e genorosos espaços para ajudar a dar um 'respiro' às cores intensas.  O uso dessas cores está bem variado dentro de cada área de conteúdo e isso é bom, pois evita aquela aparência monocromática. Dessa forma, o olhar do cliente consegue enxerar com clareza e ser melhor direcionado cada área de conteúdo sem correr o risco de mescla-las iconsciêntemente.
+Inspirado pelo logo, o layout buscou um ar mais 'fofinho' com bordas arredondas e genorosos espaços para ajudar a dar um 'respiro' às cores intensas.  O uso dessas cores está bem variado dentro de cada área de conteúdo e isso é bom, pois evita aquela aparência monocromática. Dessa forma, o olhar do cliente consegue enxerar com clareza e ser melhor direcionado para as áreas de conteúdo sem correr o risco de mescla-las iconsciêntemente.
 
  Ferramneta utilizada para desenvolvimento foi o Affinity Designer mas poderia ter sido usado o Photoshop, Illsutrator, Figma, Adobe XD...
 
