@@ -64,11 +64,11 @@ class App extends React.Component {
       a.map(
         (oferta,index )=> {
           let conteudo = {
-            "title": oferta[index][0],
-            "value": oferta[index][1],
-            "discount": oferta[index][2],
+            "title": oferta[0],
+            "value": oferta[1],
+            "discount": oferta[2],
             "image": "data:image/png;base64," + oferta[4],
-            "description": oferta[index][3]
+            "description": oferta[3]
           }
           console.log('retorno oferta: ', index)
           arrTodasOfertas.push(conteudo)          

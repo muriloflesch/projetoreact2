@@ -56,28 +56,17 @@ class Admin extends React.Component {
 
                 const _this = this
                 reader.onload = function (e2) {
-                   // console.log('this: ', _this)
                     myImg.src =  e2.target.result;
                     myImg.onload = function(){
-                       // console.log('terminou de carregar a imagem')
                         let dados = _this.getBase64Image(myImg)
-
                         arrCadastroUnico.push(dados)
-
                         todosCadastros = JSON.parse(localStorage.getItem('objDados'));
-                        let newArr = []
-                        let newArr2 = []
+                        
                         let newArr3 = []
                         console.log('todosCadastros: ', todosCadastros)
                         if(todosCadastros != null){
-                           // newArr2.push(todosCadastros)
-                           // newArr.push(arrCadastroUnico)
-                          // newArr.push(todosCadastros)
-                         //   newArr3 = newArr
+                           
                             todosCadastros.push(arrCadastroUnico)
-                           // newArr3.push(newArr2)
-                            //newArr3.push(newArr)
-                           // newArr.push()
                        }else{
                            // todosCadastros.push(arrCadastroUnico) 
                             newArr3.push(arrCadastroUnico)
@@ -89,16 +78,11 @@ class Admin extends React.Component {
 
                         var dataImage = JSON.parse(localStorage.getItem('objDados'))
                         console.log('saida admin:', dataImage)
-                        //todosCadastros.map(
-                        //    oferta => {
-                               // _this.props.ofertas([oferta],true)  
-                               // this.updateOfertas(arrCadastroUnico,false)           
-                        //    }
-                        //  )
-                                _this.props.ofertas(dataImage,true)          
+                       
+                         _this.props.ofertas(dataImage,true)          
                        
                         
-                                document.querySelector('.cont-over').classList.remove("hide");
+                         document.querySelector('.cont-over').classList.remove("hide");
                     }
                     //console.log('resultadoL ', _this.getBase64Image(myImg))
                     
@@ -140,8 +124,8 @@ class Admin extends React.Component {
                     <form className='form-cadastro' id='form-cadastro' onSubmit={this.onSubmitCadastrar.bind(this)}>
                         <div>
                             <input  className='cadastro-titulo' type="text" name="cadastro-titulo"  placeholder='título' />
-                            <input className='cadastro-valor' type="number" id="valor" name="valor" min="0" max="100"  placeholder='valor'/>
-                            <input className='cadastro-desconto' type="number" id="desconto" name="desconto" min="0" max="100" step="10" placeholder='desconto'/>
+                            <input className='cadastro-valor' type="number" id="valor" name="valor" placeholder='valor'/>
+                            <input className='cadastro-desconto' type="number" id="desconto" name="desconto" placeholder='desconto'/>
                             <input className='cadastro-upload' type="file" name="fileToUpload" id="cadastro-upload" placeholder='imagem' id='fileToUpload'/>
                             <label name='cadastro-upload-label' className='cadastro-upload-label' htmlFor="fileToUpload">escolha sua imagem</label>
                             <p className='imageValidate hide'>Cadastre uma imagem!</p>
