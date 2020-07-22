@@ -113,6 +113,12 @@ class Admin extends React.Component {
     }
     closeMsg(e){
         document.querySelector('.cont-over').classList.add("hide");
+        document.querySelector('.cadastro-descricao').value = '';
+        document.querySelector('.cadastro-titulo').value = '';
+        document.querySelector('.cadastro-valor').value = '';
+        document.querySelector('.cadastro-desconto').value = '';
+        
+
     }   
     render() {
        // console.log('entrando no render')
@@ -125,7 +131,7 @@ class Admin extends React.Component {
                         <div>
                             <input  className='cadastro-titulo' type="text" name="cadastro-titulo"  placeholder='título' />
                             <input className='cadastro-valor' type="number" id="valor" name="valor" placeholder='valor'/>
-                            <input className='cadastro-desconto' type="number" id="desconto" name="desconto" placeholder='desconto'/>
+                            <input className='cadastro-desconto' type="number" max='100' id="desconto" name="desconto" placeholder='desconto'/>
                             <input className='cadastro-upload' type="file" name="fileToUpload" id="cadastro-upload" placeholder='imagem' id='fileToUpload'/>
                             <label name='cadastro-upload-label' className='cadastro-upload-label' htmlFor="fileToUpload">escolha sua imagem</label>
                             <p className='imageValidate hide'>Cadastre uma imagem!</p>
