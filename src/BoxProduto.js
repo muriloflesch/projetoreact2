@@ -28,7 +28,9 @@ function BoxProduto(props) {
                     </div>
         }else{
             
-            return <p className='por'>por: <span className='valor-por'>{formatter.format(props.conteudo.value)}</span></p>
+            return  <div className='cont-valores'>
+                <p className='por'>por: <span className='valor-por'>{formatter.format(props.conteudo.value)}</span></p>
+                </div>
         }
     }
 
