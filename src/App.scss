@@ -53,6 +53,21 @@ a{
     z-index: 5;
     a{
       color: white;
+      
+    }
+    .bt-home{
+      @media only screen and (max-width: 768px) {
+        a{
+          color:$russian-violet;
+        }
+        
+      }
+      @media only screen and (max-width: 380px) {
+        a{
+          display: none;
+        }
+        
+      }
     }
     .wrapper{
         position: relative;
@@ -290,6 +305,8 @@ a{
     }
     form{
         display: flex;
+        flex-wrap: wrap;
+
         align-items: flex-start;
         color:$forest-green-crayola;
         & > div {
@@ -299,6 +316,9 @@ a{
         & > div:first-child{
             flex-wrap: wrap;
             width: 40%;
+            @media only screen and (max-width: 768px) {
+              width: 100%;
+            }
         }
         & > div:last-child{
           flex-flow: column;
@@ -307,6 +327,9 @@ a{
           display: flex;
           justify-content: space-between;
           align-items: flex-end;
+          @media only screen and (max-width: 768px) {
+            margin-left: 0px;
+          }
           
         }
         .imageValidate{
@@ -340,6 +363,11 @@ a{
           font-family: 'roboto';
         }
         .cadastro{
+            &-descricao{
+              @media only screen and (max-width: 768px) {
+                  margin-top: 15px;
+              }
+            }
             &-titulo{
                 width: 100%;
             }
