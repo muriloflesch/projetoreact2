@@ -41,24 +41,8 @@ class App extends React.Component {
       <Admin  ofertas={this.updateOfertas}  />
     );
   }
-  organizaDados1(a){
-    let arrTodasOfertas = []
-      console.log('array de entrada1: ', a) 
-    
-          let conteudo = {
-            "title": a[0],
-            "value": a[1],
-            "discount": a[2],
-            "image": "data:image/png;base64," + a[4],
-            "description": a[3]
-          }
-          //console.log('retorno oferta: ', index)
-          this.arrTodasOfertas.push(conteudo)          
-   
-      console.log('array de saida1:', this.arrTodasOfertas)
-    return this.arrTodasOfertas
-  }
-  organizaDados2(a){
+ 
+  organizaDados(a){
     let arrTodasOfertas = []
       console.log('array de entrada2: ', a) 
       a.map(
@@ -81,11 +65,11 @@ class App extends React.Component {
   updateOfertas(newArr,isAdmin) {
     if(isAdmin){
       this.setState({
-        todasOfertas: this.organizaDados2(newArr)
+        todasOfertas: this.organizaDados(newArr)
       });
     }else{
       this.setState({
-        todasOfertas: this.organizaDados2(newArr)
+        todasOfertas: this.organizaDados(newArr)
       });
     }
     
@@ -125,8 +109,12 @@ class App extends React.Component {
           </Route>
 
           <div className='rodape'>
-                  <div className='wrapper'></div>
-                </div>
+                  <div className='wrapper-left'></div>  
+                  <div className='wrapper'>
+                      <div className='box-auxiliar'></div>
+                  </div>
+                  <div className='wrapper-right'></div>  
+          </div>
         </BrowserRouter>
       </div>
     );

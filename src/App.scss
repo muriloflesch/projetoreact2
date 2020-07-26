@@ -276,11 +276,11 @@ a{
             width: 34px;
         }
         .swiper-button-next{
-          right: -60px;
+          right: -41px;
         }
         .swiper-button-prev{
           transform: scaleX(-1);
-          left: -60px;
+          left: -41px;
 
         }
     }
@@ -461,6 +461,7 @@ a{
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
+    box-sizing: border-box;
     .cont-box-produto{
       margin: 20px 20px;
       width: 250px;
@@ -474,11 +475,42 @@ a{
 .rodape{
   height: 500px;
   width: 100%;
+  height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+  .wrapper-left{
 
+    flex-grow: 1;
+    background-color: $russian-violet;
+    height: 258px;
+    margin-right: -1px;
+  }
   .wrapper{
-      background-image: url('/images/rodapeBackground.png');
+      background-image: url('/images/rodapeBackground.jpg');
       background-repeat: no-repeat;
       background-position: bottom;
       height: 100%;
+      width: 100%;
+      padding-top: 10%;
+      padding-left: 21px;
+    padding-right: 20px;
+    box-sizing: border-box;
+      .box-auxiliar{
+        max-width: 450px;
+        height: 220px;
+        background-color: $forest-green-crayola;
+        border-radius: 28px;
+       
+    
+      }
+  }
+  .wrapper-right{
+    flex-grow: 1;
+    background-color: $russian-violet ;
+    height: 435.6px;
+    margin-left:-1px
   }
 }
