@@ -1,5 +1,5 @@
-![Alt text](http://muriloflesch.com/imagens/admin.png "Home")
-![Alt text](http://muriloflesch.com/imagens/home.png "Home")
+![Alt text](http://muriloflesch.com/imagens/admin.jpg "Home")
+![Alt text](http://muriloflesch.com/imagens/home.jpg "Home")
 
 URL de acesso ao build em funcionamento
 https://muriloflesch.com
