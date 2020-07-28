@@ -1,4 +1,4 @@
-![Alt text](http://muriloflesch.com/imagens/home.jpg "Home")
+![Alt text](http://muriloflesch.com/imagens/home2.jpg "Home")
 ![Alt text](http://muriloflesch.com/imagens/admin.jpg "Home")
 
 
